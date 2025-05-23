@@ -1,0 +1,64 @@
+.pantalla{
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(186, 145, 224);
+}
+
+body {
+    font-family: sans-serif;
+    background: #1d031d;
+    padding: 20px;
+    }
+
+.device {
+    border: 2px solid #df8dc3;
+    border-radius: 10px;
+    margin: 20px auto;
+    background: #df8dc3;
+    max-width: 100%;
+    overflow: hidden;
+    }
+
+.header {
+    background: #e94d98;
+    height: 100px;
+    }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    }
+
+.box {
+    background: #c739b4;
+    flex: 1 1 100%;
+    height: 80px;
+    }
+
+  /* Tabletas (768px a 991.98px) */
+    @media (min-width: 768px) {
+    .box {
+      flex: 1 1 calc(50% - 10px);
+      background-color: #aa81ec;
+      width: 50px;
+      height: 100px;
+    }
+  }
+
+  /* Laptops (992px a 1199.98px) */
+  @media (min-width: 992px) {
+    .box {
+      flex: 1 1 calc(33.333% - 10px);
+      background-color: #d461b8;
+    }
+  }
+
+  /* Full HD (1200px en adelante) */
+  @media (min-width: 1200px) {
+    .box {
+      flex: 1 1 calc(25% - 10px);
+    }
+  }
